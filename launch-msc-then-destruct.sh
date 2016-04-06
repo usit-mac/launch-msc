@@ -1,10 +1,10 @@
 #!/bin/sh
 
-WORK_D=no.uio.usit.launch-msc.plist
-PATH=/Library/LaunchAgent
+DOMAIN=no.uio.usit.launch-msc
+PLIST=${DOMAIN}.plist
+THEPATH=/Library/LaunchAgents/${PLIST}
 
 open /Applications/Managed\ Software\ Center.app
-launchctl stop ${WORK_D}
-launchctl unload ${PATH}/${WORK_D}
-rm ${PATH}/${WORK_D}
+launchctl stop ${THEPATH}
+rm ${THEPATH}
 srm "$0"
