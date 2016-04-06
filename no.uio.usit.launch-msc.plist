@@ -3,14 +3,15 @@
 <plist version="1.0">
 
 <dict>
-
 	<key>Label</key>
-	<string>no.uio.usit.launch</string>
+	<string>no.uio.usit.launch-msc</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>sudo</string>
 		<string>sh</string>
-		<string>launch-msc-then-destruct.sh</string>
+		<string>/Library/Scripts/launch-msc-then-destruct.sh</string>
 	</array>
+	<key>RunAtLoad</key>
+	<true/>
 </dict>
 </plist>
