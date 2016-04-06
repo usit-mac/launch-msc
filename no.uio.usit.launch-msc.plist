@@ -5,15 +5,12 @@
 <dict>
 
 	<key>Label</key>
-
-	<string>com.example.launch</string>
-
+	<string>no.uio.usit.launch</string>
 	<key>ProgramArguments</key>
-
 	<array>
-		<string>open</string>
-
-		<string>/Applications/Managed Software Center.app</string>
+		<string>sudo</string>
+		<string>sh</string>
+		<string>launch-msc-then-destruct.sh</string>
 	</array>
 </dict>
 </plist>
